@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Customer Reference Request Briefs | customer reference request template</title>
+  <meta name="description" content="Paste public-safe customer reference request notes and generate a consent-safe ask brief, missing-context checklist, owner handoff, and privacy/tone risk flags before contacting an advocate.">
+  <meta name="robots" content="index,follow">
+  <meta property="og:title" content="Customer Reference Request Briefs">
+  <meta property="og:description" content="Turn reference-request notes into a consent-safe customer ask before sales pings the same advocate again.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ert93333-ops.github.io/customer-reference-request-briefs/">
+  <meta name="twitter:card" content="summary">
+  <link rel="canonical" href="https://ert93333-ops.github.io/customer-reference-request-briefs/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#workflow">Skip to workflow</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="./" aria-label="Customer Reference Request Briefs home">Customer Reference Request Briefs</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#workflow">Workflow</a>
+        <a href="#pricing">Pricing</a>
+        <a href="customer-reference-request-template.html">Template</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <h1>Turn reference-request notes into a consent-safe customer ask before sales pings the same advocate again.</h1>
+          <p class="hero-subtitle">Paste public-safe reference request notes and get a missing-context checklist, safer ask outline, owner handoff, fatigue guardrails, and privacy/tone risk flags before a customer is contacted.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#workflow">Generate reference brief</a>
+            <a class="button secondary" href="customer-reference-request-template.html">View reference checklist</a>
+          </div>
+        </div>
+        <aside class="brief-preview" aria-label="Brief preview">
+          <p class="brief-label">Checks before ask</p>
+          <strong>Deal context, buyer fit, advocate fit, consent, fatigue, time ask, confidentiality, owner, approval, and privacy risk.</strong>
+          <p>No CRM export. No customer list upload. No private contact storage. No automated customer email.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="workflow" class="section">
+      <div class="shell section-grid">
+        <div>
+          <h2>Turn reference requests into a consent-safe brief.</h2>
+          <p>Use public-safe notes only. Do not paste CRM exports, customer lists, private customer contacts, personal emails, contract details, credentials, or private account data.</p>
+          <div class="input-grid">
+            <label>Reference request notes<textarea id="reference-notes" placeholder="Example: Enterprise prospect wants to talk with a similar analytics customer before procurement review."></textarea></label>
+            <label>Deal context / reference purpose<textarea id="deal-notes" class="short-textarea" placeholder="Example: late-stage enterprise deal, proof needed before security/procurement review..."></textarea></label>
+            <label>Buyer persona / use-case match<textarea id="buyer-notes" class="short-textarea" placeholder="Example: VP Ops in healthcare analytics, same reporting workflow and rollout size..."></textarea></label>
+            <label>Advocate fit / relationship health<textarea id="advocate-notes" class="short-textarea" placeholder="Example: customer is a happy admin champion, health green, similar use case..."></textarea></label>
+            <label>Consent / approval status<textarea id="consent-notes" class="short-textarea" placeholder="Example: customer previously opted into references; marketing approval required..."></textarea></label>
+            <label>Recent asks / fatigue guardrail<textarea id="fatigue-notes" class="short-textarea" placeholder="Example: last reference call 45 days ago, no more than one ask per quarter..."></textarea></label>
+            <label>Time-boxed ask / commitment<textarea id="ask-notes" class="short-textarea" placeholder="Example: 20-minute call next week, no prep required, optional decline..."></textarea></label>
+            <label>Confidentiality / permission boundary<textarea id="confidentiality-notes" class="short-textarea" placeholder="Example: no logo use, no public quote, customer can approve any summary..."></textarea></label>
+            <label>Owner / reviewer / follow-up path<textarea id="owner-notes" class="short-textarea" placeholder="Example: customer marketing owns ask; CSM reviews; AE gets status only..."></textarea></label>
+            <label>Current ask draft<textarea id="ask-draft" class="short-textarea" placeholder="Example: Would you be open to a 20-minute reference call? No pressure if timing is not good."></textarea></label>
+            <label>Tone / privacy notes<textarea id="tone-notes" class="short-textarea" placeholder="Example: no pressure, no private emails, no CRM export, no contract details..."></textarea></label>
+          </div>
+          <div class="form-actions">
+            <button class="button secondary" type="button" id="sample-button">Load sample request</button>
+            <button class="button primary" type="button" id="generate-button">Generate reference brief</button>
+          </div>
+          <p class="copy-status" id="workflow-error" role="status" aria-live="polite"></p>
+        </div>
+        <aside class="output-panel" id="output-panel" aria-live="polite">
+          <div class="status-pill"><span class="status-dot"></span><span id="output-status">Waiting for reference notes</span></div>
+          <div id="brief-output" class="brief-output"><p>Paste public-safe reference request context to generate a consent-safe brief.</p></div>
+          <button class="button small" type="button" id="copy-brief" disabled>Copy brief</button>
+          <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="pricing" class="section">
+      <div class="shell">
+        <h2>Pay only if this reduces awkward reference asks.</h2>
+        <div class="pricing-grid">
+          <article class="price-card">
+            <h3>Starter</h3>
+            <p class="price">$19/month</p>
+            <p>For founders, sales operators, and customer marketers handling reference requests manually.</p>
+            <button class="button full plan-button" type="button" data-plan="Starter">Request Starter access</button>
+          </article>
+          <article class="price-card">
+            <h3>Team</h3>
+            <p class="price">$79/month</p>
+            <p>For sales, customer marketing, advocacy, and CS teams standardizing reference asks.</p>
+            <button class="button full plan-button" type="button" data-plan="Team">Request Team access</button>
+          </article>
+        </div>
+        <form class="handoff-panel" id="intent-form">
+          <h3>Purchase-intent fallback</h3>
+          <p>Stored locally in this browser. The public issue handoff excludes private email by default.</p>
+          <div class="input-grid compact">
+            <label>Email<input id="intent-email" type="email" placeholder="you@example.com"></label>
+            <label>Role/team<input id="intent-role" type="text" placeholder="Sales, customer marketing, advocacy, founder..."></label>
+            <label>Reference volume<input id="reference-volume" type="text" placeholder="Example: 12 reference asks per month"></label>
+            <label>Current reference process<input id="current-process" type="text" placeholder="Example: Slack request plus spreadsheet"></label>
+            <label>Plan interest<select id="plan-interest"><option>Starter</option><option>Team</option></select></label>
+            <label>Willingness to pay<input id="willingness" type="text" placeholder="$19/month, $79/month, paid pilot..."></label>
+          </div>
+          <button class="button primary" type="submit">Request early access</button>
+          <p class="copy-status" id="intent-status" role="status" aria-live="polite"></p>
+          <div id="remote-intent" hidden>
+            <a class="button secondary" id="remote-intent-link" target="_blank" rel="noreferrer">Open public request</a>
+            <button class="button ghost" type="button" id="copy-remote-intent">Copy request details</button>
+            <p class="copy-status" id="remote-copy-status" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <p>Browser-local MVP. No CRM, advocacy platform, customer list upload, private contact storage, customer email sending, or backend.</p>
+      <a href="customer-reference-request-template.html">Customer reference request checklist</a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
