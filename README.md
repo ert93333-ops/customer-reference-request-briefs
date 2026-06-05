@@ -6,6 +6,7 @@ Static browser-local MVP for turning public-safe customer reference request note
 
 - Landing: `https://ert93333-ops.github.io/customer-reference-request-briefs/`
 - Checklist: `https://ert93333-ops.github.io/customer-reference-request-briefs/customer-reference-request-template.html`
+- Public Gist checklist: `https://gist.github.com/ert93333-ops/8d1f7273ae13020a8a047f5f517a1233`
 
 ## Scope
 
